@@ -11,3 +11,7 @@ sudo apt-get install -y fcitx-googlepinyin
 `
 sudo apt-get install firefox-esr -y
 `
+对32位版本的Pi OS来说，SMB协议已经更新到2.0版本以上。移动硬盘挂载在路由器上时，会使用SMB1.0.所以采用挂载的方式：<br>
+`
+sudo mount -t cifs -o guest,vers=1.0 //K3C/Disc-1/ /home/pi/K3C/
+`
